@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Barcode Scanner</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <div id="scanner-view">
+    <div id="scanner"></div>
+    <canvas id="canvas-top"></canvas>
+    <canvas id="canvas-bottom"></canvas>
+  </div>
+
+  <div id="image-view">
+    <img id="selected-image">
+    <input id="restart-scanner-btn" type="button" value="돌아가기">
+  </div>
+
+  <label id="select-image-btn" for="select-image">
+      <img class="icon" src="./images/photo-library.png" alt="">
+  </label>
+  <input id="select-image" type="file" accept="image/*" onclick="this.value = null">
+  
+  <label id="flashlight-btn" for="flashlight">
+    <img id="flash-off" class="icon" src="./images/flash-off.png" alt="">
+    <img id="flash-on" class="icon" src="./images/flash.png" alt="">
+  </label>
+  <input id="flashlight" type="button">
+  
+  <!-- Include the image-diff library -->
+  <script src="./js/quagga.js"></script>
+  <script type="module" src="./js/config/init.js"></script>
+  <script type="module" src="./js/config/decodeSingle.js"></script>
+  <script type="module" src="./js/app.js"></script>
+
+</body>
+</html>
+
+
+
+
+

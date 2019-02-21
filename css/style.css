@@ -1,0 +1,129 @@
+html,body{
+  width : 100%;
+  height : 100%;
+  margin : 0;
+}
+
+#scanner-view{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+#scanner,video{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+canvas{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+#canvas-top{
+  position: fixed;
+  width: 100%;
+  height: 30%;
+  background-color: rgba(0,0,0,0.9);
+  overflow: hidden;
+  object-fit: cover;
+}
+#canvas-bottom{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30%;
+  background-color: rgba(0,0,0,0.9);
+  overflow: hidden;
+  object-fit: cover;
+}
+
+#image-view{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+#selected-image{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+#restart-scanner-btn{
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  width: 200px;
+  background-color: rgba(0,0,0,0.42);
+  color: white;
+  font-size: 16px;
+  border: none;
+  padding: 15px 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 30px;
+  left: calc(50% - 100px);
+  display: inline-block;
+  border-radius: 30px;
+}
+
+#restart-scanner-btn:focus{
+  outline: none;
+}
+
+#select-image-btn{
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  top: 0;
+  right: 0;
+  background-color: rgba(0,0,0, 0.42);
+  color: white;
+  border-radius: 60px;
+  border: none;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
+#select-image{
+  display: none;
+}
+
+#flashlight-btn{
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0, 0.42);
+  color: white;
+  font-size: 16px;
+  border-radius: 60px;
+  border: none;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  z-index: 10;
+  display: none;
+}
+#flash-off{
+  display: inline-block;
+}
+#flash-on{
+  display: none;
+}
+#flashlight{
+  display: none;
+}
+
+.icon{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: calc(50% - 10px);
+  left: calc(50% - 10px);
+}
